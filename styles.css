@@ -1,0 +1,148 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    overflow: hidden;
+}
+
+.full-container{
+    width: auto;
+    max-width: 800px;
+    height: auto;
+    margin: 20px;
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+    background: rgb(68, 68, 68);
+    display: flex;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.contact img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.chat-container{
+    width: 500px;
+    height: 700px;
+    background: rgb(144, 144, 144);
+    background-image: url('bg-whatsapp-phone.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow-y: scroll;
+}
+
+.msg-data-container{
+    width: fit-content;
+    max-width: 70%; /* Ajusta este valor según el diseño que desees */
+    height: auto;
+    display: flex;
+    background: rgb(86, 86, 86);
+    border-radius: 14px 14px 14px 2px;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.msg-data-container2{
+    width: fit-content;
+    max-width: 70%; /* Ajusta este valor según el diseño que desees */
+    height: auto;
+    display: flex;
+    background: #075e54;
+    border-radius: 14px 14px 14px 2px;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    margin-left: auto;
+}
+
+
+.time{
+    font-size: 10px;
+    margin-left: 5px;
+    color: #ccc;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+
+.message-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(56, 56, 56);
+    padding: 5px;
+    align-items: center;
+}
+
+.message-container input{
+    width: 100%;
+    height: 25px;
+    border-radius: 25px;
+    padding: 5px;
+    border: none;
+    margin-right: 10px;
+    border: 1px solid  #ccc;
+    outline: none;
+    caret-color: green;
+    background: rgb(89, 89, 89);
+    color: white;
+    padding-left: 15px;
+}
+
+.message-container button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: #25d366;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.appear{
+    animation: appear 0.5s forwards;
+}
+
+.disappear{
+    animation: disappear 0.5s forwards;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes disappear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
